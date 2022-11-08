@@ -2,7 +2,9 @@ import React from 'react'
 
 function Todo() {
     return (
-        <div>Todo</div>
+        <div>
+            My To Do
+        </div>
     )
 }
 
