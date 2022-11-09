@@ -15,6 +15,10 @@ function TodoList() {
             .then((data) => setTodos(data));
     }, []);
 
+    function handleAddTodo(newItem) {
+        setTodos((todos) => [...todos, newItem]);
+    }
+
 
     const todosToDisplay = todos.filter((item) => {
         if (selectedCategory === "All") return true;
