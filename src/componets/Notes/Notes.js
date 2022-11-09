@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useMemo, useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 function Notes() {
-   const [title, setTitle] = useState("");
+  const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [keyword, setKeyword] = useState("");
   const [notes, setNotes] = useState([]);
