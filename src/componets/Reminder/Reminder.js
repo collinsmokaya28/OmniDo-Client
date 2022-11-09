@@ -33,7 +33,7 @@ function Reminder() {
               <h3>{name}</h3>
             </div>
             <div className='button'>
-              <button className='btn' onClick={() => removePerson(id)}>
+              <button className='btn delete' onClick={() => removePerson(id)}>
                 Delete
               </button>
             </div>
