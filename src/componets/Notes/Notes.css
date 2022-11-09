@@ -1,0 +1,38 @@
+.main-cont{
+  background-color: red !important;
+}
+.notesdetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.notesform {
+  text-align: center;
+  gap: 1em;
+  padding: 1em;
+}
+.searchform {
+  text-align: center;
+  gap: 1em;
+  padding: 1em;
+}
+.forminput {
+  margin: 1em;
+}
+.forminput > input {
+  padding: 1em;
+  margin-left: 1em;
+}
+.addbtn {
+  background-color: lightblue;
+  width: 5em;
+  height: 2.5em;
+  border: none;
+  border-radius: 1em;
+}
+.addbtn:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
