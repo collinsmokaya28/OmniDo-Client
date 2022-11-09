@@ -25,6 +25,14 @@ function TodoList() {
         });
         setTodos(updatedItems);
     }
+    function handleDeleteItem(deletedItem) {
+        const updatedItems = todos.filter((item) => item.id !== deletedItem.id);
+        setTodos(updatedItems);
+    }
+
+    function handleCategoryChange(category) {
+        setSelectedCategory(category);
+    }
 
     const todosToDisplay = todos.filter((item) => {
         if (selectedCategory === "All") return true;
