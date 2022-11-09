@@ -1,9 +1,11 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
+import './Reminder.css'
+import App from './App'
 
-function Reminder() {
-    return (
-        <div>Reminder</div>
-    )
-}
-
-export default Reminder
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+)
