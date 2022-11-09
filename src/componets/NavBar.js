@@ -10,7 +10,6 @@ function NavBar() {
                     <Link className='nav-links' to="/notes">Notes</Link>
                     <Link className='nav-links' to="/todo">ToDo</Link>
                     <Link className='nav-links' to="/reminder">Reminder</Link>
-                    <Link className='nav-links' to="/login">Login</Link>
                 </div>
             </div>
             <Outlet />
