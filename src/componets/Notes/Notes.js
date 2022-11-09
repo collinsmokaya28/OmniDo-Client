@@ -30,27 +30,25 @@ function Notes() {
       return Title.includes(keyword) || Description.includes(keyword);
     });
   }, [keyword, notes]);
-
   return (
-    <div > 
-
+    <div className="notesdetails" >
         <h1>Notes</h1>
-        <form onSubmit={add}>
+        <form className="notesform" onSubmit={add}>
         <h1>Add note</h1>
-        <div>
+        <div className="forminput">
           <label>Title</label>
           <input value={Title} onChange={(e) => setTitle(e.target.value)} />
         </div>
-        <div>
+        <div className="forminput">
           <label>Description</label>
           <input
             value={Description}
             onChange={(e) => setDescription(e.target.value)}
           />
         </div>
-        <button type="submit">Add</button>
+        <button className="addbtn" type="submit">Add</button>
       </form>
-      <form>
+      <form className="searchform">
         <h1>Search</h1>
         <div>
           <label>Keyword</label>
@@ -68,9 +66,7 @@ function Notes() {
           </div>
         );
       })}
-
     </div>
   )
 }
-
 export default Notes
