@@ -61,9 +61,14 @@ h3 {
   transition: opacity 0.4s;
   cursor: pointer;
 }
+button.delete {
+  background-color: #5bcbd7;
+  color: #f1f1f1;
+}
 
 .btn:hover {
   opacity: 0.8;
+  color: #f1f1f1;
 }
 
 @media (min-width: 992px) {
@@ -72,3 +77,4 @@ h3 {
     margin: 10px auto;
   }
 }
+
