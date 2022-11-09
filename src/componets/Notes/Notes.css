@@ -1,108 +1,100 @@
-
-
 * {
-    box-sizing: border-box;
-  }
- 
-  body {
-    background-color: #ffff99;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  h1{
-    align-items:center;
-    font-family: "Oooh Baby", cursive;
-    width: 40px;
-    height: 60px;
-    margin: 10px;
-    background-color: #f1f1f1;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  
-  Title,
-  Description {
-    font-family: "Oooh Baby", cursive;
-    font-weight: bold;
-    width: 400px;
-    height: 650px;
-    padding: 80px 100px;
-    background: transparent;
-  }
-  
-  Title {
-    font-size: 22px;
-    text-transform: capitalize;
-  }
-  
-  Description {
-    flex-grow: 1;
-    font-size: 20px;
-  }
-  input,
-  textarea {
-    outline: none;
-    resize: none;
-  }
-  button.remove{
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-  Search {
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    padding: 5px;
-    margin-bottom: 1.5em;
-  }
-  .notesdetails{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .notesform{
-    text-align: center;
-    gap: 1em;
-    padding: 1em;
-  }
-  .searchform{
-    text-align: center;
-    gap: 1em;
-    padding: 1em;
-  }
-  .forminput{
-    margin: 1em;
-  }
-  .forminput > input {
-   padding: 1em;
-   margin-left: 1em;
-  }
-  .addbtn{
-    background-color: lightblue;
-    width: 5em;
-    height: 2.5em;
-    border: none;
-    border-radius: 1em;
-  }
-  .addbtn:hover{
-    cursor: pointer;
-    background-color: black;
-    color:white ;
-  }
-   
- 
- 
-  
-  
+  box-sizing: border-box;
+}
+
+.main-cont.container{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1 {
+  align-items: center;
+  font-family: "Oooh Baby", cursive;
+  width: 40px;
+  height: 60px;
+  margin: 10px;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+Title,
+Description {
+  font-family: "Oooh Baby", cursive;
+  font-weight: bold;
+  width: 400px;
+  height: 650px;
+  padding: 80px 100px;
+  background: transparent;
+}
+
+Title {
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
+Description {
+  flex-grow: 1;
+  font-size: 20px;
+}
+input,
+textarea {
+  outline: none;
+  resize: none;
+}
+button.remove {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+Search {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+.notesdetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.notesform {
+  text-align: center;
+  gap: 1em;
+  padding: 1em;
+}
+.searchform {
+  text-align: center;
+  gap: 1em;
+  padding: 1em;
+}
+.forminput {
+  margin: 1em;
+}
+.forminput > input {
+  padding: 1em;
+  margin-left: 1em;
+}
+.addbtn {
+  background-color: lightblue;
+  width: 5em;
+  height: 2.5em;
+  border: none;
+  border-radius: 1em;
+}
+.addbtn:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
