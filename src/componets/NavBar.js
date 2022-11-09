@@ -7,10 +7,9 @@ function NavBar() {
             <div className='navbar-container'>
                 <Link className="navbar-logo" to="/">To-Do-App</Link>
                 <div className='nav-menu'>
-                    <Link className='nav-links' to="/notes">Notes</Link>
                     <Link className='nav-links' to="/todo">ToDo</Link>
                     <Link className='nav-links' to="/reminder">Reminder</Link>
-                    <Link className='nav-links' to="/login">Login</Link>
+                    <Link className='nav-links' to="/notes">Notes</Link>
                 </div>
             </div>
             <Outlet />
