@@ -1,88 +1,82 @@
 
+ * {
+  box-sizing: border-box;
+}
 
-* {
-    box-sizing: border-box;
-  }
- 
-  body {
-    background-color: #ffff99;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  h1{
-    align-items:center;
-    font-family: "Oooh Baby", cursive;
-    width: 40px;
-    height: 60px;
-    margin: 10px;
-    background-color: #f1f1f1;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  
-  Title,
-  Description {
-    font-family: "Oooh Baby", cursive;
-    font-weight: bold;
-    width: 400px;
-    height: 650px;
-    padding: 80px 100px;
-    background: transparent;
-  }
-  
-  Title {
-    font-size: 22px;
-    text-transform: capitalize;
-  }
-  
-  Description {
-    flex-grow: 1;
-    font-size: 20px;
-  }
-  input,
-  textarea {
-    outline: none;
-    resize: none;
-  }
-  button.remove{
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-  Search {
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    padding: 5px;
-    margin-bottom: 1.5em;
-  }
-  .notesdetails{
+body {
+  background-color: #ffff99;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.Notes .h1{
+  align-items:center;
+  font-family: "Oooh Baby", cursive;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.Title,
+.Description {
+  font-family: "Oooh Baby", cursive;
+  font-weight: bold;
+  width: 100%;
+  padding: 8px 14px;
+  background: transparent;
+}
+
+.Title {
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
+.Description {
+  flex-grow: 1;
+  font-size: 20px;
+}
+input,
+textarea {
+  outline: none;
+  resize: none;
+}
+.btn.add{
+  background-color: #f1f1f1 !important;
+  font-size: 1.1rem;
+  padding: 0.25rem;
+  width: 12%;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+} 
+.search {
+  flex-grow: 1;
+  max-width: 300px;
+}
+.notesdetails{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .notesform{
+.notesform{
     text-align: center;
     gap: 1em;
     padding: 1em;
   }
-  .searchform{
+.searchform{
     text-align: center;
     gap: 1em;
     padding: 1em;
   }
-  .forminput{
+   .forminput{
     margin: 1em;
   }
   .forminput > input {
