@@ -4,8 +4,8 @@ import './Notes.css';
 
 
 function Notes() {
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
+  const [Title, setTitle] = useState("");
+  const [Description, setDescription] = useState("");
   const [keyword, setKeyword] = useState("");
   const [notes, setNotes] = useState([]);
   const add = (e) => {
@@ -14,8 +14,8 @@ function Notes() {
       ...notes,
       {
         id: uuidv4(),
-        title,
-        description
+        Title,
+        Description
       }
     ]);
   };
@@ -26,43 +26,44 @@ function Notes() {
     if (!keyword) {
       return notes;
     }
-    return notes.filter(({ title, description }) => {
-      return title.includes(keyword) || description.includes(keyword);
+    return notes.filter(({ Title, Description }) => {
+      return Title.includes(keyword) || Description.includes(keyword);
     });
   }, [keyword, notes]);
 
   return (
-    <div>
+    <div > 
+
         <h1>Notes</h1>
         <form onSubmit={add}>
-        <h1>add note</h1>
+        <h1>Add note</h1>
         <div>
-          <label>title</label>
-          <input value={title} onChange={(e) => setTitle(e.target.value)} />
+          <label>Title</label>
+          <input value={Title} onChange={(e) => setTitle(e.target.value)} />
         </div>
         <div>
-          <label>description</label>
+          <label>Description</label>
           <input
-            value={description}
+            value={Description}
             onChange={(e) => setDescription(e.target.value)}
           />
         </div>
-        <button type="submit">add</button>
+        <button type="submit">Add</button>
       </form>
       <form>
-        <h1>search</h1>
+        <h1>Search</h1>
         <div>
-          <label>keyword</label>
+          <label>Keyword</label>
           <input value={keyword} onChange={(e) => setKeyword(e.target.value)} />
         </div>
       </form>
       {filteredNotes.map((note, index) => {
         return (
           <div key={note.id}>
-            <h2>{note.title}</h2>
-            <p>{note.description}</p>
+            <h2>{note.Title}</h2>
+            <p>{note.Description}</p>
             <button type="button" onClick={() => remove(index)}>
-              remove
+              Remove
             </button>
           </div>
         );
