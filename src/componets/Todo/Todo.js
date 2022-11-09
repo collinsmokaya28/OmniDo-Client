@@ -15,6 +15,17 @@ function Todo({ todo, onItemUpdate, onItemDelete }) {
             .then((res) => res.json())
             .then((updatedItem) => onItemUpdate(updatedItem));
     }
+
+    function handleDelete() {
+        fetch(`http://localhost:9292/todos/${todo.id}`, {
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json",
+            }
+        })
+            .then((res) => res.json)
+            .then(() => onItemDelete(todo));
+    }
     return (
         <div>
             <li className={todo.done ? "done" : ""}>
