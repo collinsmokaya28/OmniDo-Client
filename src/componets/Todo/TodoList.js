@@ -19,6 +19,12 @@ function TodoList() {
         setTodos((todos) => [...todos, newItem]);
     }
 
+    function handleUpdateItem(updatedItem) {
+        const updatedItems = todos.map((item) => {
+            return item.id === updatedItem.id ? updatedItem : item;
+        });
+        setTodos(updatedItems);
+    }
 
     const todosToDisplay = todos.filter((item) => {
         if (selectedCategory === "All") return true;
