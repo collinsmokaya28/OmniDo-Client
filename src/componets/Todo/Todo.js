@@ -2,6 +2,19 @@ import { BsCheckLg, BsFillTrashFill, BsXSquareFill } from "react-icons/bs";
 import React from "react";
 
 function Todo({ todo, onItemUpdate, onItemDelete }) {
+    function handleDone() {
+        fetch(`http://localhost:9292/todos/${todo.id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                done: !todo.done,
+            }),
+        })
+            .then((res) => res.json())
+            .then((updatedItem) => onItemUpdate(updatedItem));
+    }
     return (
         <div>
             <li className={todo.done ? "done" : ""}>
