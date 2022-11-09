@@ -11,6 +11,17 @@ function NewTodo({ onAddItem }) {
             category: category,
             done: false,
         };
+        fetch("http://localhost:9292/todos", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newTodo),
+        })
+            .then((res) => res.json())
+            .then((newItem) => onAddItem(newItem));
+        setText("");
+        setCategory("Any");
     }
 
     return (
