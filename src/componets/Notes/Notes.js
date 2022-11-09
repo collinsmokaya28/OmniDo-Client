@@ -1,7 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import './Notes.css';
-
+import "./Notes.css";
 
 function Notes() {
   const [Title, setTitle] = useState("");
@@ -15,8 +14,8 @@ function Notes() {
       {
         id: uuidv4(),
         Title,
-        Description
-      }
+        Description,
+      },
     ]);
   };
   const remove = (index) => {
@@ -32,28 +31,33 @@ function Notes() {
   }, [keyword, notes]);
   return (
     <div className="main-cont container">
-      <div className="notesdetails" >
-        <h1>Notes</h1>
+      <div className="notesdetails">
+        <h3>Notes</h3>
         <form className="notesform" onSubmit={add}>
-          <h1>Add note</h1>
+          <h4>Add note</h4>
           <div className="forminput">
-            <label>Title</label>
+            <label>Title: </label>
             <input value={Title} onChange={(e) => setTitle(e.target.value)} />
           </div>
           <div className="forminput">
-            <label>Description</label>
+            <label>Description: </label>
             <input
               value={Description}
               onChange={(e) => setDescription(e.target.value)}
             />
           </div>
-          <button className="addbtn" type="submit">Add</button>
+          <button className="addbtn" type="submit">
+            Add
+          </button>
         </form>
         <form className="searchform">
-          <h1>Search</h1>
+          <h5>Search</h5>
           <div>
-            <label>Keyword</label>
-            <input value={keyword} onChange={(e) => setKeyword(e.target.value)} />
+            <label>Keyword: </label>
+            <input
+              value={keyword}
+              onChange={(e) => setKeyword(e.target.value)}
+            />
           </div>
         </form>
         {filteredNotes.map((note, index) => {
@@ -69,6 +73,6 @@ function Notes() {
         })}
       </div>
     </div>
-  )
+  );
 }
-export default Notes
+export default Notes;
