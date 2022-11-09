@@ -16,6 +16,12 @@ function TodoList() {
     }, []);
 
 
+    const todosToDisplay = todos.filter((item) => {
+        if (selectedCategory === "All") return true;
+
+        return item.category === selectedCategory;
+    });
+
     return (
         <div className="container-fluid">
             <div className="todoList">
