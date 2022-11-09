@@ -1,10 +1,37 @@
 import React from 'react'
 
 function Notes() {
+   const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
+  const [keyword, setKeyword] = useState("");
+  const [notes, setNotes] = useState([]);
+  const add = (e) => {
+    e.preventDefault();
+    setNotes((notes) => [
+      ...notes,
+      {
+        id: uuidv4(),
+        title,
+        description
+      }
+    ]);
+  };
+  const remove = (index) => {
+    setNotes((notes) => notes.filter((_, i) => i !== index));
+  };
+  const filteredNotes = useMemo(() => {
+    if (!keyword) {
+      return notes;
+    }
+    return notes.filter(({ title, description }) => {
+      return title.includes(keyword) || description.includes(keyword);
+    });
+  }, [keyword, notes]);
+
   return (
     <div>
         <h1>Notes</h1>
-            <form onSubmit={add}>
+        <form onSubmit={add}>
         <h1>add note</h1>
         <div>
           <label>title</label>
