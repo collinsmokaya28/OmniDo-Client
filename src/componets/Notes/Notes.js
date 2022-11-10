@@ -53,11 +53,13 @@ function Notes() {
         <form className="searchform">
           <h5>Search</h5>
           <div>
-            <label>Keyword: </label>
-            <input
-              value={keyword}
-              onChange={(e) => setKeyword(e.target.value)}
-            />
+            <label>
+              Keyword:{" "}
+              <input
+                value={keyword}
+                onChange={(e) => setKeyword(e.target.value)}
+              />
+            </label>
           </div>
         </form>
         {filteredNotes.map((note, index) => {

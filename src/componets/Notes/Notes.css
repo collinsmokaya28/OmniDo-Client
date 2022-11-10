@@ -3,11 +3,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
 }
 .notesform {
   text-align: center;
   gap: 1em;
   padding: 1em;
+  font-family: 'Space Grotesk', sans-serif;
 }
 .searchform {
   text-align: center;
@@ -27,6 +30,7 @@
   height: 2.5em;
   border: none;
   border-radius: 1em;
+  font-family: 'Space Grotesk', sans-serif;
 }
 .addbtn:hover {
   cursor: pointer;
