@@ -103,5 +103,6 @@ option{
   }
   .sort select{
     width: 45%;
+    margin-left: 1px;
   }
 }

@@ -21,7 +21,7 @@ function Todo({ todo, onItemUpdate, onItemDelete }) {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json",
-            }
+            },
         })
             .then((res) => res.json)
             .then(() => onItemDelete(todo));
@@ -32,14 +32,10 @@ function Todo({ todo, onItemUpdate, onItemDelete }) {
                 <span>{todo.text}</span>
                 <span className="category">{todo.category}</span>
                 <button className="btn check" onClick={handleDone}>
-
                     {todo.done ? <BsCheckLg /> : <BsXSquareFill />}
-
                 </button>
                 <button className="remove btn" onClick={handleDelete}>
-
                     <BsFillTrashFill />
-
                 </button>
             </li>
         </div>

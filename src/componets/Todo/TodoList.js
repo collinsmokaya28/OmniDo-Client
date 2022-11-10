@@ -2,10 +2,9 @@ import React, { useEffect, useState } from "react";
 import NewTodo from "./NewTodo";
 import Sort from "./Sort";
 import Todo from "./Todo";
-import './Todo.css';
+import "./Todo.css";
 
 function TodoList() {
-
     const [selectedCategory, setSelectedCategory] = useState("All");
     const [todos, setTodos] = useState([]);
 
@@ -14,26 +13,27 @@ function TodoList() {
             .then((res) => res.json())
             .then((data) => setTodos(data));
     }, []);
-
+    //handle adding
     function handleAddTodo(newItem) {
         setTodos((todos) => [...todos, newItem]);
     }
-
+    //handle upadting
     function handleUpdateItem(updatedItem) {
         const updatedItems = todos.map((item) => {
             return item.id === updatedItem.id ? updatedItem : item;
         });
         setTodos(updatedItems);
     }
+    //handle delete
     function handleDeleteItem(deletedItem) {
         const updatedItems = todos.filter((item) => item.id !== deletedItem.id);
         setTodos(updatedItems);
     }
-
+    //handle categories
     function handleCategoryChange(category) {
         setSelectedCategory(category);
     }
-
+    //display category
     const todosToDisplay = todos.filter((item) => {
         if (selectedCategory === "All") return true;
 
@@ -43,16 +43,13 @@ function TodoList() {
     return (
         <div className="container-fluid">
             <div className="todoList">
-                <div className="header">Today's Task</div>
-                <NewTodo
-                    onAddItem={handleAddTodo}
-                />
+                <div className="header">Tasks</div>
+                <NewTodo onAddItem={handleAddTodo} />
                 <Sort
                     category={selectedCategory}
                     onCategoryChange={handleCategoryChange}
                 />
                 <ul className="todos">
-
                     {todosToDisplay.map((todo) => (
                         <Todo
                             key={todo.id}
@@ -61,7 +58,6 @@ function TodoList() {
                             onItemDelete={handleDeleteItem}
                         />
                     ))}
-
                 </ul>
             </div>
         </div>
