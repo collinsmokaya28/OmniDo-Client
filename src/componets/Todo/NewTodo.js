@@ -38,6 +38,8 @@ function NewTodo({ onAddItem }) {
                         >
                             <option value="Any">Any</option>
                             <option value="Coding">Coding</option>
+                            <option value="Laundry">Laundry</option>
+                            <option value="Shopping">Shopping</option>
                             <option value="Relaxing">Relaxing</option>
                         </select>
                     </p>

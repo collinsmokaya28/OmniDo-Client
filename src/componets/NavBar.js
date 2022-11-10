@@ -6,14 +6,14 @@ function NavBar() {
         <div className="header">
             <div className="navbar-container">
                 <Link className="navbar-logo" to="/">
-                    To-Do-App
+                    OmniDO
                 </Link>
                 <div className="nav-menu">
-                    <Link className="nav-links" to="/notes">
-                        Notes
-                    </Link>
                     <Link className="nav-links" to="/todo">
                         Todos
+                    </Link>
+                    <Link className="nav-links" to="/notes">
+                        Notes
                     </Link>
                     <Link className="nav-links" to="/reminder">
                         Reminders

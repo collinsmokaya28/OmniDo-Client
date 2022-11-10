@@ -12,6 +12,8 @@ function Sort({ category, onCategoryChange }) {
                 <option value="All">Sort by Categories...</option>
                 <option value="Any">Any</option>
                 <option value="Coding">Coding</option>
+                <option value="Laundry">Laundry</option>
+                <option value="Shopping">Shopping</option>
                 <option value="Relaxing">Relaxing</option>
             </select>
         </div>
