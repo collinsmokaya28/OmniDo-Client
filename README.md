@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# OmniDo - Group Collaboration Project.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This a todo list app that help users create, read, update and delete a task that they have created successfully. A user an be able to see all the tasks that have been created and updated them accordingly. When he/she has finished the task they can successfully delete it. Aslo a user can be able to create notes to avoid forgetting. When done they can delete. Aslo the app has a reminder feature that allows the user to remember events like birtdays.
 
-## Available Scripts
+## Table of content
 
-In the project directory, you can run:
+- [Project Features](#project-features)
+- [Live link](#live-link)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation--set-up)
+- [Contributions](#contributions)
+- [License and Copyright](#license-and-copyright)
+- [Authors Info](#authors-info)
 
-### `npm start`
+## Project Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Navigation Bar - Navigating through different pages(components).
+- Home Page - Main Page that diaplys starting page.
+- Todos - Todos starting page where user can create tasks.
+- Notes - Page that allows the user to create notes.
+- Reminder - Page that allows the user to create reminders.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Live Link
 
-### `npm test`
+- [Live Link](https://ruby-project1-rho.vercel.app)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- React Library - it was used to design, structure and add content to the web pages
+- CSS - it was used to styling our the pages
+- Bootstrap - it was used for styling our pages.
+- Vercel App - Deploying the Application
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation & Set up
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Clone the repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+git@github.com:collinsmokaya28/Ruby-Project1.git
+```
 
-### `npm run eject`
+Install dependecies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Run
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributions
 
-## Learn More
+1. Fork this repository.
+2. Create a branch: `git checkout -b <branch_name>`.
+3. Make your changes and commit them: `git commit -m '<commit_message>'`
+4. Push to the original branch: `git push origin <project_name>/<location>`
+5. Create the pull request.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License and Copyright.
 
-### Code Splitting
+[MIT license](https://opensource.org/licenses/MIT)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Copyright (c) [2022] []
 
-### Analyzing the Bundle Size
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-### Making a Progressive Web App
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Authors Info
