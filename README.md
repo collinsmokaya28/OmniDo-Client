@@ -22,7 +22,7 @@ This a todo list app that help users create, read, update and delete a task that
 
 ## Live Link
 
-- [Live Link](https://ruby-project1-rho.vercel.app)
+- [OmniDo](https://ruby-project1-rho.vercel.app)
 
 ## Technologies Used
 
@@ -74,3 +74,8 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Authors Info
+
+- [Collins Mokaya](https://github.com/collinsmokaya28)
+- [Barosio Felix](https://github.com/Felix-Barosio)
+- [Brian Kandagor](https://github.com/briankorir44)
+- [Jusper Mokua](https://github.com/juspher-mokua)
