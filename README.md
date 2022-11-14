@@ -22,7 +22,7 @@ This a todo list app that help users create, read, update and delete a task that
 
 ## Live Link
 
-- [OmniDo](https://ruby-project1-rho.vercel.app)
+- [OmniDo](https://omni-do-client.vercel.app/)
 
 ## Technologies Used
 
