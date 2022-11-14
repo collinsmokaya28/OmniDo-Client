@@ -36,7 +36,7 @@ This a todo list app that help users create, read, update and delete a task that
 Clone the repository
 
 ```
-git@github.com:collinsmokaya28/Ruby-Project1.git
+https://github.com/collinsmokaya28/OmniDo-Client
 ```
 
 Install dependecies
